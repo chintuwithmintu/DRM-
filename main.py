@@ -4,12 +4,12 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 # Replace with your API ID, API Hash, and Bot Token
-API_ID = "28817205"
-API_HASH = "f319d02866bf7b83e4de31002f6ba8a3"
-BOT_TOKEN = "7930856596:AAFxEm9xu7Bzx11jZ9G56Gng1qmpE781um4"
+API_ID = "29940750"
+API_HASH = "33412ad3b366ca991309d1bcbb472c32"
+BOT_TOKEN = "7703142204:AAFjjhJTkQVsU7drBWd733F6lH357mz-JVE"
 
 # Telegram channel where files will be forwarded
-CHANNEL_USERNAME = "newgrp3"  # Replace with your channel username
+CHANNEL_USERNAME = "newgrp101"  # Replace with your channel username
 
 # Initialize Pyrogram Client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -97,7 +97,7 @@ def generate_html(file_name, videos, pdfs, others):
 </head>
 <body>
     <div class="header">{file_name_without_extension}</div>
-    <div class="subheading">📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : <a href="https://t.me/chiru52" target="_blank">🅲🅷🅸🆁🆄</a></div>
+    <div class="subheading">📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : <a href="https://t.me/oreo_bhai" target="_blank">OREO</a></div>
 
     <div class="search-bar">
         <input type="text" id="searchInput" placeholder="Search for videos, PDFs, or other resources..." oninput="filterContent()">
@@ -145,7 +145,7 @@ def generate_html(file_name, videos, pdfs, others):
         </div>
     </div>
 
-    <div class="footer">Extracted By - <a href="https://t.me/chiru52" target="_blank">🅲🅷🅸🆁🆄</a></div>
+    <div class="footer">Extracted By - <a href="https://t.me/oreo_bhai" target="_blank">OREO</a></div>
 
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
@@ -256,7 +256,7 @@ async def handle_file(client: Client, message: Message):
         f.write(html_content)
 
     # Send the HTML file to the user
-    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : 🅲🅷🅸🆁🆄")
+    await message.reply_document(document=html_file_path, caption="✅ 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 𝐃𝐨𝐧𝐞!\n\n📥 𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 : OREO")
 
     # Forward the .txt file to the channel
     await client.send_document(chat_id=CHANNEL_USERNAME, document=file_path)
